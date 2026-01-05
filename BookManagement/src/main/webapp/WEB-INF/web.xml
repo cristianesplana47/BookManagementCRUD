@@ -1,0 +1,39 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" version="5.0">
+
+<servlet>
+    <servlet-name>Add</servlet-name>
+    <servlet-class>servlet.AddBookServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Add</servlet-name>
+    <url-pattern>/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>List</servlet-name>
+    <servlet-class>servlet.ListBookServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>List</servlet-name>
+    <url-pattern>/list</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Update</servlet-name>
+    <servlet-class>servlet.UpdateBookServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Update</servlet-name>
+    <url-pattern>/update</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Delete</servlet-name>
+    <servlet-class>servlet.DeleteBookServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+</servlet-mapping>
+
+</web-app>

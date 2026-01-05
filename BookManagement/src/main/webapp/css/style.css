@@ -1,0 +1,135 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* ===== Base Layout ===== */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #e6f0ff; /* light blue background */
+    margin: 0;
+    padding: 0;
+    color: #1a1a3a; /* dark blue text */
+    text-align: center;
+}
+
+/* ===== Header ===== */
+header {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0d47a1; /* strong blue */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    margin: 40px 0 30px 0;
+}
+
+/* ===== Table Container ===== */
+.table-wrapper {
+    width: 90%;
+    margin: 0 auto 30px auto;
+    background: #ffffff; /* white background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== Table ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    color: #0d47a1; /* dark blue */
+    border-bottom: 2px solid #90caf9;
+    background: #bbdefb; /* light blue header */
+}
+
+td {
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e3f2fd;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f7ff; /* alternating row color */
+}
+
+tr:hover {
+    background-color: #d0e4ff;
+}
+
+/* ===== Action Links ===== */
+td a {
+    margin: 0 6px;
+    color: #0d47a1;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+td a:hover {
+    color: #1976d2;
+}
+
+/* ===== Add/Save Button ===== */
+button,
+.add-new {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 30px;
+    border-radius: 8px;
+    background: #0d47a1;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.add-new:hover {
+    background: #1976d2;
+}
+
+/* ===== Form Card ===== */
+form {
+    width: 400px;
+    margin: 0 auto 30px auto;
+    background: #ffffff; /* white form background */
+    padding: 35px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Form Inputs ===== */
+.field {
+    margin-bottom: 20px;
+}
+
+.field input {
+    width: 80%;
+    padding: 10px 30px;
+    font-size: 14px;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    outline: none;
+    color: #1a1a3a;
+}
+
+.field input::placeholder {
+    color: #90a4ae;
+    font-style: italic;
+}
+
+.field label {
+    display: block;
+    width: 95%;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: #0d47a1;
+    font-size: 12px;
+}
